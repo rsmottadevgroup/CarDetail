@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profissionais | Painel Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div id="loading-screen"><div class="spinner"></div></div>
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar">
+      <a href="../index.html" class="logo">Admin</a>
+      <nav class="sidebar-nav">
+        <a href="admin-dashboard.html"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+        <a href="admin-agendamentos.html"><i class="fa-solid fa-calendar-check"></i> Agendamentos</a>
+        <a href="admin-servicos.html"><i class="fa-solid fa-wrench"></i> Serviços</a>
+        <a href="admin-profissionais.html" class="active"><i class="fa-solid fa-user-tie"></i> Profissionais</a>
+        <a href="admin-pacientes.html"><i class="fa-solid fa-users"></i> Clientes</a>
+        <a href="admin-disponibilidade.html"><i class="fa-solid fa-clock"></i> Disponibilidade</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="logout-btn" class="btn btn-outline btn-sm" style="width:100%;">Sair</button>
+      </div>
+    </aside>
+    <main class="main-content">
+      <div class="content-header">
+        <button id="sidebar-toggle" class="mobile-menu-btn btn btn-outline btn-sm"><i class="fa-solid fa-bars"></i></button>
+        <h1>Profissionais</h1>
+        <div style="margin-left:auto;display:flex;gap:0.5rem;">
+          <button id="novo-prof" class="btn btn-cta small">+ Novo Profissional</button>
+        </div>
+      </div>
+      <div class="card">
+        <div style="overflow-x:auto;">
+          <table class="data-table">
+            <thead><tr><th>Nome</th><th>Função</th><th>Especialidades</th><th>Ativo</th><th>Ações</th></tr></thead>
+            <tbody id="prof-tbody"><tr><td colspan="5">Carregando...</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal-overlay hidden" id="modal-prof">
+    <div class="modal-box">
+      <button class="modal-close" id="fechar-modal-prof"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="modal-prof-title">Novo profissional</h3>
+      <div class="form-group"><label>Nome</label><input id="prof-nome" class="form-control"></div>
+      <div class="form-group"><label>Função</label><input id="prof-funcao" class="form-control"></div>
+      <div class="form-group"><label>Especialidades (separadas por vírgula)</label><input id="prof-espec" class="form-control"></div>
+      <div class="form-group"><label>Biografia</label><textarea id="prof-bio" class="form-control" rows="3"></textarea></div>
+      <div class="form-group"><label>URL da Foto (opcional)</label><input id="prof-foto" class="form-control"></div>
+      <div style="display:flex;gap:0.5rem;justify-content:flex-end;margin-top:0.8rem;"><button id="salvar-prof" class="btn btn-cta small">Salvar</button><button id="excluir-prof" class="btn btn-danger small hidden">Excluir</button></div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../config/supabase-config.js"></script>
+  <script src="../js/utils/toast.js"></script>
+  <script src="../js/modules/auth.js"></script>
+  <script src="../js/modules/admin.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/pages/admin-profissionais.js"></script>
+</body>
+</html>

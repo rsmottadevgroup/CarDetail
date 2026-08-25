@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarturaDetail | Estética Automotiva</title>
+  <meta name="description" content="Fartura Veículos Multimarcas — estética automotiva premium e agendamento online para serviços de polimento, higienização e detalhamento.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- Tela de carregamento -->
+  <div id="loading-screen"><div class="spinner"></div></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">FARTURA<br><span style="font-weight:600;font-size:0.8rem;letter-spacing:1px;">DETAIL</span></a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#profissionais">Profissionais</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+    
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="pages/login.html" class="btn btn-outline btn-sm">Entrar</a>
+        <a href="pages/agendar.html" class="btn btn-primary btn-sm main-cta">AGENDAR HORÁRIO</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-media" aria-hidden="true">
+        <img id="hero-car" src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=8c2a1a4d6f3f4f3a7f6e3c2b1a9b8c7d" alt="Carro premium" loading="lazy">
+        <div class="hero-veil"></div>
+      </div>
+      <div class="hero-content container">
+        <h1 class="hero-title">Estética Automotiva Premium<span class="gold-dot">.</span></h1>
+        <p class="hero-sub">Polimento técnico, higienização e proteção de pintura para quem busca excelência no cuidado automotivo.</p>
+        <div class="hero-actions">
+          <a href="pages/agendar.html" class="btn btn-cta">AGENDAR HORÁRIO</a>
+          <a href="#servicos" class="btn btn-outline">Conheça nossos serviços</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CARROSSEL ===================== -->
+  <section class="carousel-section">
+    <div class="container">
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide">
+            <div>
+              <h3>Estética Geral & Envelopamento</h3>
+              <p>Prevenção e cuidado contínuo para todos os veículos.</p>
+              <a href="pages/login.html" class="btn btn-primary btn-sm">Agendar</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1608259243654-70c070e0f6ed?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Consulta cardiológica">
+          </div>
+          <div class="carousel-slide">
+            <div>
+              <h3>"Sua caranga merece atenção todos os dias."</h3>
+              <p>Acompanhamento próximo e retornos facilitados pelo sistema online.</p>
+              <a href="pages/login.html" class="btn btn-primary btn-sm">Agendar</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1708805282695-ef186db20192?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Consultório acolhedor">
+          </div>
+          <div class="carousel-slide">
+            <div>
+              <h3>Agende em poucos cliques</h3>
+              <p>Escolha o dia e horário ideais direto pelo site, sem burocracia.</p>
+              <a href="pages/login.html" class="btn btn-primary btn-sm">Agendar</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1620584899131-a5ff5f8fbb03?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Agenda digital de consultas">
+          </div>
+        </div>
+        <button class="carousel-arrow prev" aria-label="Slide anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-arrow next" aria-label="Próximo slide"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="carousel-controls" id="carousel-controls"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="about-section" id="sobre">
+    <div class="container">
+      <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lavador Ribeiro">
+      <div>
+        <h2>João, Lavador </h2>
+        <p>Com mais de 15 anos de experiência, o João une conhecimento técnico e escuta atenta para oferecer um cuidado completo, próximo e humano — do diagnóstico ao acompanhamento contínuo.</p>
+        <div class="about-values">
+          <div class="card"><i class="fa-solid fa-heart-pulse"></i><h4>Missão</h4><p>Cuidar com excelência e empatia.</p></div>
+          <div class="card"><i class="fa-solid fa-eye"></i><h4>Objetivo</h4><p>Ser referência em polimento especializado.</p></div>
+          <div class="card"><i class="fa-solid fa-hand-holding-heart"></i><h4>Valores</h4><p>Ética, acolhimento e transparência.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section class="services-section" id="servicos">
+    <div class="container">
+      <h2 class="text-center">Nossos Serviços</h2>
+      <p class="section-sub">Estética automotiva de alto padrão — escolha o serviço ideal para seu veículo.</p>
+      <div class="services-grid" id="services-grid">
+        <!-- Cards serão carregados via JS a partir da tabela `servicos` -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA ANTES/DEPOIS ===================== -->
+  <section class="gallery-section" id="galeria">
+    
+   
+<style>
+/* ===== ANTES & DEPOIS ===== */
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+.container h2.text-center {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #ffffff;
+  position: relative;
+}
+
+.container h2.text-center::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  margin: 15px auto 18px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #111, #777);
+}
+
+.section-sub {
+  max-width: 650px;
+  margin: 0 auto 45px;
+  text-align: center;
+  color: #777;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* GRID */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+
+.gallery-item {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #111;
+  cursor: pointer;
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.15),
+    0 5px 15px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.gallery-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    transparent 45%,
+    rgba(0, 0, 0, 0.75)
+  );
+  pointer-events: none;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+/* IMAGEM */
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s cubic-bezier(.2,.8,.2,1);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* OVERLAY */
+
+.gallery-item .overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(2px);
+  transition: opacity 0.35s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* BOTÃO */
+
+.gallery-item .btn {
+  border: 1px solid rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.95);
+  color: #111;
+  padding: 13px 28px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  transition: all 0.3s ease;
+}
+
+.gallery-item .btn:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+  transform: scale(1.08);
+}
+
+/* ETIQUETA */
+
+.gallery-item::after {
+  content: "ANTES & DEPOIS";
+  position: absolute;
+  z-index: 4;
+  top: 18px;
+  left: 18px;
+  padding: 8px 14px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover::after {
+  background: #fff;
+  color: #111;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 50px 16px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery-item {
+    height: 350px;
+    border-radius: 18px;
+  }
+
+  .section-sub {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .gallery-item {
+    height: 280px;
+  }
+
+  .container h2.text-center {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<div class="container">
+  <h2 class="text-center">Antes & Depois</h2>
+
+  <p class="section-sub">
+    Transformações reais: veja o resultado dos nossos serviços de detalhamento.
+  </p>
+
+  <div class="gallery-grid" id="gallery-grid">
+
+  <div
+      class="gallery-item"
+      data-before="images/Bmwsuja.png"
+      data-after="images/Bmwlimpa.png"
+    >
+      <img src="images/Bmwsuja.png" alt="Antes">
+      <div class="overlay">
+        <button class="btn btn-sm">Ver</button>
+      </div>
+    </div>
+
+    <div
+      class="gallery-item"
+      data-before="images/Bmwsuja.png"
+      data-after="images/Bmwlimpa.png"
+    >
+      <img src="images/Bmwlimpa.png" alt="Depois">
+      <div class="overlay">
+        <button class="btn btn-sm">Ver</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section class="testimonials-section" id="depoimentos">
+    <div class="container">
+      <h2>O que dizem nossos Clientes</h2>
+      <div class="testimonial-track">
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"Atendimento excelente, agendamento super fácil pelo site."</p><strong>— Mariana S.</strong></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"Me senti bem atendido do início ao fim. Recomendo muito."</p><strong>— Carlos E.</strong></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"Profissionalismo e cuidado em cada veículo."</p><strong>— Juliana R.</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="contact-section" id="contato">
+    <div class="container">
+      <div>
+        <h2>Fale Conosco</h2>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-phone"></i> (14) 99889-4962</li>
+          <li><i class="fa-brands fa-whatsapp"></i> Agende pelo WhatsApp</li>
+          <li><i class="fa-solid fa-envelope"></i> rsmottadevgroup@gmail.com</li>
+          <li><i class="fa-solid fa-location-dot"></i>R. Carlos Guimarães, 1234 - Vila Nova, Fartura - SP</li>
+        </ul>
+        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.9229896982856!2d-49.51214242376494!3d-23.39100305535749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c1a5699e8b0e8f%3A0xf29f881d297c6567!2sCasa%20Grande%20-%20Espa%C3%A7os%20Comerciais!5e0!3m2!1spt-BR!2sbr!4v1785765767268!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <form id="contact-form" class="card">
+<div class="form-group">
+    <label for="contact-nome">Nome</label>
+    <input type="text" id="contact-nome" class="form-control" placeholder="Ex: Maria Silva" required>
+</div>
+
+<div class="form-group">
+    <label for="contact-email">E-mail</label>
+    <input type="email" id="contact-email" class="form-control" placeholder="Ex: mariasilva@gmail.com" required>
+</div>
+
+<div class="form-group">
+    <label for="contact-msg">Mensagem</label>
+    <textarea id="contact-msg" class="form-control" rows="4" placeholder="Ex: Olá, preciso de atendimento específico!" required></textarea>
+</div>
+
+    <button type="submit" class="btn btn-primary">
+        Enviar mensagem
+    </button>
+</form>
+      
+    </div>
+  </section>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  
+  <!-- Lightbox modal (antes/depois) -->
+  <div class="gd-modal" id="gd-modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="gd-close" id="gd-close" aria-label="Fechar">&times;</button>
+      <div class="gd-toggle">
+        <button id="gd-show-before" class="btn btn-sm">Antes</button>
+        <button id="gd-show-after" class="btn btn-sm">Depois</button>
+      </div>
+      <div class="modal-media" id="gd-media">
+        <img id="gd-before" src="" alt="Antes">
+        <img id="gd-after" src="" alt="Depois">
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo"><i class=""></i> Fartura Detail</a>
+        <p style="margin-top:0.8rem;font-size:0.85rem;color:var(--color-gray-400);">Cuidado automotivo pragmático e moderno.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/ryansmotta27"
+   target="_blank"
+   aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+
+          <a href="https://www.facebook.com/ryansmotta27"
+   target="_blank"
+   aria-label="Facebook">
+    <i class="fa-brands fa-facebook"></i>
+</a>
+
+          <a href="https://wa.me/5514998894962?text=Ol%C3%A1%2C%20gostaria%20de%20um%20atendimento%20pelo%20WhatsApp."
+   target="_blank"
+   aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+        </div>
+      </div>
+      <div><h4>Navegação</h4><a href="#sobre">Sobre</a><br><a href="#especialidades">Especialidades</a><br><a href="#contato">Contato</a></div>
+      <div><h4>Conta</h4><a href="pages/login.html">Entrar</a><br><a href="pages/cadastro.html">Cadastrar</a></div>
+      <div><h4>Contato</h4><a href="tel:+5511999999999">(11) 99889-4962</a><br><a href="mailto:rsmottadevgroup@gmail.com">rsmottadevgroup@gmail.com</a></div>
+    </div>
+    <p class="footer-bottom">© 2026 Fartura Detail. Todos os direitos reservados.</p>
+  </footer>
+
+  <div id="toast-container"></div>
+
+  <script src="js/utils/toast.js"></script>
+  <script src="js/utils/validators.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config/supabase-config.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/gallery.js"></script>
+  <script src="js/modules/whatsapp.js"></script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.getElementById("contact-form");
+    const modal = document.getElementById("confirmModal");
+    const preview = document.getElementById("preview");
+
+    let mensagemWhatsapp = "";
+
+    form.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        const nome = document.getElementById("contact-nome").value.trim();
+        const email = document.getElementById("contact-email").value.trim();
+        const mensagem = document.getElementById("contact-msg").value.trim();
+
+        mensagemWhatsapp =
+`Olá, gostaria de um atendimento.
+
+ Nome: ${nome}
+
+ E-mail: ${email}
+
+ Mensagem:
+${mensagem}`;
+
+        preview.innerHTML = `
+<b>Nome:</b> ${nome}<br><br>
+<b>E-mail:</b> ${email}<br><br>
+<b>Mensagem:</b><br>${mensagem}
+`;
+
+        modal.classList.add("show");
+
+    });
+
+    document.getElementById("cancelBtn").onclick = () =>{
+        modal.classList.remove("show");
+    }
+
+    document.getElementById("confirmBtn").onclick = () =>{
+
+        window.open(
+            "https://wa.me/5514998894962?text="+encodeURIComponent(mensagemWhatsapp),
+            "_blank"
+        );
+
+        modal.classList.remove("show");
+        form.reset();
+
+    }
+
+});
+
+</script>
+<!--balao flutuante-->
+<div id="confirmModal" class="modal">
+    <div class="modal-content">
+        <h3>Confirmar envio</h3>
+
+        <div id="preview"></div>
+
+        <div class="modal-buttons">
+            <button id="cancelBtn" class="btn btn-outline">Cancelar</button>
+            <button id="confirmBtn" class="btn btn-primary">
+                Enviar pelo WhatsApp
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

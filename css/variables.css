@@ -1,0 +1,79 @@
+/* ============================================================
+   VARIABLES.CSS
+   Tokens de design do sistema: cores, tipografia, espaçamento,
+   sombras e transições. Alterar aqui reflete em todo o site.
+   ============================================================ */
+
+:root {
+  /* --- Paleta de cores centralizada (Tema Dark Premium) --- */
+  --bg-primary: #050505; /* page background */
+  --bg-secondary: #0B0B0B; /* secondary backgrounds */
+  --bg-card: #111111; /* card backgrounds */
+  --bg-card-hover: #171717;
+  --bg-input: #151515;
+
+  --border-dark: #292929;
+  --border-light: #3A3A3A;
+
+  --gold: #C9A227;
+  --gold-light: #E1C45A;
+  --gold-dark: #9F7D12;
+
+  --silver: #A7A7A7;
+  --silver-light: #D5D5D5;
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #B8B8B8;
+  --text-muted: #858585;
+
+  --danger: #D64545;
+  --success: #35B56A;
+  --warning: #D6A82A;
+
+  /* Backwards-compatible aliases (used elsewhere) */
+  --color-white: var(--text-primary);
+  --color-black-deep: var(--bg-primary);
+  --color-black-secondary: var(--bg-secondary);
+  --color-surface-dark: var(--bg-card);
+  --color-silver: var(--silver);
+  --color-silver-light: var(--silver-light);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-danger: var(--danger);
+
+  /* --- Tipografia --- */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* --- Espaçamento --- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  /* --- Bordas e sombras --- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow-soft: 0 6px 24px rgba(0,0,0,0.6);
+  --shadow-hover: 0 12px 36px rgba(0,0,0,0.7);
+
+  /* --- Transições --- */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.4s ease;
+
+  /* --- Layout --- */
+  --container-width: 1200px;
+  --header-height: 76px;
+}
+
+/* --- Dark mode (opcional, ativado via classe no body) --- */
+body.dark-mode {
+  --color-white: #16232a;
+  --color-gray-50: #1c2c34;
+  --color-gray-100: #22343d;
+  --color-gray-200: #2c4149;
+  --color-gray-800: #eef1f3;
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
