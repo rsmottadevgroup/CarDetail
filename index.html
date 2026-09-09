@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fartura Detail | Estética Automotiva Premium</title>
+  <meta name="description" content="Fartura Detail — estética automotiva premium: polimento técnico, proteção cerâmica e higienização de alto padrão. Agende online.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Pré-conexão com o CDN do vídeo do hero -->
+  <link rel="preconnect" href="https://assets.mixkit.co">
+
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/home-redesign.css">
+</head>
+<body>
+
+  <!-- Tela de carregamento -->
+  <div id="loading-screen"><div class="spinner"></div></div>
+
+  <!-- Grão de filme sutil sobre toda a página -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">FARTURA<br><span style="font-weight:600;font-size:0.8rem;letter-spacing:1px;">DETAIL</span></a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#profissionais">Profissionais</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="pages/login.html" class="btn btn-outline btn-sm">Entrar</a>
+        <a href="pages/agendar.html" class="btn btn-primary btn-sm main-cta" data-cursor="AGENDAR">AGENDAR HORÁRIO</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO CINEMATOGRÁFICO ===================== -->
+  <section class="hero" id="home" data-hero>
+    <div class="hero-stage" aria-hidden="true">
+      <img class="hero-fallback-img"
+           src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3"
+           alt="">
+      <video class="hero-video"
+             muted autoplay loop playsinline preload="none"
+             poster="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3"
+             data-src="https://assets.mixkit.co/videos/47831/47831-360.mp4"></video>
+      <div class="hero-scrim"></div>
+      <div class="hero-vignette"></div>
+    </div>
+
+    <div class="hero-frame container-wide">
+      <div class="hero-top-row">
+        <span class="micro-label">FARTURA DETAIL — ESTÉTICA AUTOMOTIVA</span>
+        <span class="micro-label micro-label--right">FARTURA · SP · BRASIL</span>
+      </div>
+
+      <div class="hero-mid">
+        <h1 class="hero-title">
+          <span class="line">PERFEIÇÃO</span>
+          <span class="line">EM CADA <em>REFLEXO</em>.</span>
+        </h1>
+      </div>
+
+      <div class="hero-bottom-row">
+        <p class="hero-sub">Polimento técnico, higienização profunda e proteção de pintura para quem não aceita menos do que a excelência no cuidado com o próprio veículo.</p>
+        <div class="hero-actions">
+          <a href="pages/agendar.html" class="btn btn-cta" data-cursor="AGENDAR">AGENDAR HORÁRIO</a>
+          <a href="#servicos" class="btn btn-outline" data-cursor="EXPLORE">Conheça nossos serviços</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scrolldown"><span></span>ROLE PARA EXPLORAR</div>
+  </section>
+
+  <!-- ===================== MARQUEE / TICKER ===================== -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>
+        <i class="fa-solid fa-circle"></i> Polimento Técnico
+        <i class="fa-solid fa-circle"></i> Proteção Cerâmica
+        <i class="fa-solid fa-circle"></i> Higienização Profunda
+        <i class="fa-solid fa-circle"></i> Detalhamento de Precisão
+        <i class="fa-solid fa-circle"></i> Vitrificação de Pintura
+        <i class="fa-solid fa-circle"></i> Descontaminação Técnica
+      </span>
+    </div>
+  </div>
+
+  <div id="profissionais"></div>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="about-section" id="sobre">
+    <div class="container">
+      <div class="about-media" data-reveal>
+        <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="João, especialista em detalhamento automotivo">
+        <span class="tag">Desde 2013 · Fartura, SP</span>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow" data-reveal>01 — Sobre Nós</span>
+        <h2 data-reveal>João, Especialista em<br>Detalhamento Automotivo</h2>
+        <p data-reveal>Com mais de 15 anos de experiência, João une conhecimento técnico e olhar apurado para oferecer um cuidado completo e próximo — do diagnóstico da pintura ao acompanhamento contínuo do seu veículo.</p>
+        <div class="about-values" data-reveal>
+          <div class="card"><i class="fa-solid fa-crosshairs"></i><h4>Missão</h4><p>Cuidar de cada veículo com técnica e precisão.</p></div>
+          <div class="card"><i class="fa-solid fa-eye"></i><h4>Objetivo</h4><p>Ser referência em detalhamento especializado.</p></div>
+          <div class="card"><i class="fa-solid fa-gem"></i><h4>Valores</h4><p>Ética, atenção ao detalhe e transparência.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DESTAQUES ===================== -->
+  <section class="carousel-section">
+    <div class="container">
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide">
+            <div>
+              <h3>Estética Geral & Envelopamento</h3>
+              <p>Prevenção e cuidado contínuo para todos os tipos de veículo, do popular ao esportivo.</p>
+              <a href="pages/agendar.html" class="btn btn-primary btn-sm">Agendar</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Detalhamento de veículo premium">
+          </div>
+          <div class="carousel-slide">
+            <div>
+              <h3>"Seu carro merece atenção todos os dias."</h3>
+              <p>Acompanhamento próximo e retornos facilitados pelo sistema de agendamento online.</p>
+              <a href="pages/agendar.html" class="btn btn-primary btn-sm">Agendar</a>
+            </div>
+            <img src="images/Bmwlimpa.png" alt="Resultado de detalhamento em BMW">
+          </div>
+          <div class="carousel-slide">
+            <div>
+              <h3>Agende em poucos cliques</h3>
+              <p>Escolha o dia e horário ideais direto pelo site, sem burocracia.</p>
+              <a href="pages/agendar.html" class="btn btn-primary btn-sm">Agendar</a>
+            </div>
+            <img src="images/Bmwsuja.png" alt="Veículo antes do detalhamento">
+          </div>
+        </div>
+        <button class="carousel-arrow prev" aria-label="Slide anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-arrow next" aria-label="Próximo slide"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="carousel-controls" id="carousel-controls"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section class="services-section" id="servicos">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">02 — Serviços</span>
+        <h2>Estética automotiva<br>de alto padrão.</h2>
+        <p>Cada serviço é conduzido com técnica, produtos de alta performance e atenção total ao detalhe — escolha o cuidado ideal para o seu veículo.</p>
+      </div>
+      <div class="services-grid" id="services-grid">
+        <p class="services-empty-note">Carregando serviços…</p>
+        <!-- Cards serão carregados via JS a partir da tabela `servicos` -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NOSSO PROCESSO ===================== -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">03 — Nosso Processo</span>
+        <h2>Precisão industrial,<br>cuidado artesanal.</h2>
+        <p>Cinco etapas técnicas conduzem cada veículo até o acabamento ideal — sem atalhos, sem pressa.</p>
+      </div>
+
+      <div class="process-layout">
+        <div class="process-list">
+          <div class="process-rail"><div class="process-rail-fill"></div></div>
+
+          <div class="process-step is-active">
+            <span class="num">01</span>
+            <h3>Inspeção</h3>
+            <p>Avaliação técnica completa da pintura, identificando marcas, oxidação e o histórico de cuidado do veículo.</p>
+          </div>
+          <div class="process-step">
+            <span class="num">02</span>
+            <h3>Descontaminação</h3>
+            <p>Remoção de contaminantes ferrosos, resina e sujeira incrustada antes de qualquer correção de pintura.</p>
+          </div>
+          <div class="process-step">
+            <span class="num">03</span>
+            <h3>Correção</h3>
+            <p>Polimento técnico em etapas para remover marcas de uso e devolver profundidade e brilho à pintura.</p>
+          </div>
+          <div class="process-step">
+            <span class="num">04</span>
+            <h3>Proteção</h3>
+            <p>Aplicação de proteção cerâmica ou vitrificação, criando uma camada de resistência e hidrofobicidade.</p>
+          </div>
+          <div class="process-step">
+            <span class="num">05</span>
+            <h3>Finalização</h3>
+            <p>Inspeção final sob luz técnica e entrega do veículo com o acabamento no padrão Fartura Detail.</p>
+          </div>
+        </div>
+
+        <div class="process-visual" data-reveal>
+          <img class="is-active" src="https://assets.mixkit.co/videos/47829/47829-thumb-360-3.jpg" alt="Inspeção técnica da pintura">
+          <img src="https://assets.mixkit.co/videos/47585/47585-thumb-360-3.jpg" alt="Descontaminação do veículo">
+          <img src="https://assets.mixkit.co/videos/47830/47830-thumb-360-3.jpg" alt="Correção de pintura por polimento">
+          <img src="https://assets.mixkit.co/videos/47831/47831-thumb-360-2.jpg" alt="Aplicação de proteção cerâmica">
+          <img src="https://assets.mixkit.co/videos/47833/47833-thumb-360-2.jpg" alt="Finalização e brilho">
+          <span class="process-visual-label">Etapa em destaque</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS ===================== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid" data-reveal>
+        <div class="stat-item"><div class="stat-number"><span data-count="500" data-suffix="+">0</span></div><div class="stat-label">Veículos Tratados</div></div>
+        <div class="stat-item"><div class="stat-number"><span data-count="10" data-suffix="+">0</span></div><div class="stat-label">Anos de Experiência</div></div>
+        <div class="stat-item"><div class="stat-number"><span data-count="98" data-suffix="%">0</span></div><div class="stat-label">Clientes Recorrentes</div></div>
+        <div class="stat-item"><div class="stat-number"><span data-count="100" data-suffix="%">0</span></div><div class="stat-label">Atenção aos Detalhes</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ANTES / DEPOIS (SLIDER) ===================== -->
+  <section class="compare-section" id="antes-depois">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">05 — Antes & Depois</span>
+        <h2>Arraste e veja<br>a transformação.</h2>
+      </div>
+
+      <div class="compare-wrap" data-reveal>
+        <div class="compare-slider" data-cursor="ARRASTE">
+          <img class="compare-after" src="images/Bmwlimpa.png" alt="Depois do detalhamento">
+          <div class="compare-before-wrap">
+            <img src="images/Bmwsuja.png" alt="Antes do detalhamento">
+          </div>
+          <span class="compare-label before">Antes</span>
+          <span class="compare-label after">Depois</span>
+          <div class="compare-handle"><div class="grip"><i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-right"></i></div></div>
+        </div>
+
+        <div class="compare-foot">
+          <p>Transformações reais: o resultado de uma correção de pintura completa, do estado bruto ao acabamento de vitrine.</p>
+          <div class="compare-thumbs" id="gallery-grid">
+            <div class="gallery-item" data-before="images/Bmwsuja.png" data-after="images/Bmwlimpa.png" data-cursor="VIEW">
+              <img src="images/Bmwsuja.png" alt="Antes">
+              <div class="overlay"><button class="btn btn-sm">Ver</button></div>
+            </div>
+            <div class="gallery-item" data-before="images/Bmwsuja.png" data-after="images/Bmwlimpa.png" data-cursor="VIEW">
+              <img src="images/Bmwlimpa.png" alt="Depois">
+              <div class="overlay"><button class="btn btn-sm">Ver</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA EDITORIAL ===================== -->
+  <section class="editorial-gallery-section" id="galeria">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">06 — Galeria</span>
+        <h2>Cada detalhe,<br>registrado.</h2>
+      </div>
+
+      <div class="editorial-gallery" data-reveal>
+        <div class="egal-item egal-1"><img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Carro premium detalhado" loading="lazy"><span class="egal-cap">Acabamento de vitrine</span></div>
+        <div class="egal-item egal-2"><img src="https://assets.mixkit.co/videos/47834/47834-thumb-360-3.jpg" alt="Polimento da frente do veículo" loading="lazy"><span class="egal-cap">Correção de pintura</span></div>
+        <div class="egal-item egal-3"><img src="images/Bmwlimpa.png" alt="Resultado final em BMW" loading="lazy"><span class="egal-cap">Depois</span></div>
+        <div class="egal-item egal-4"><img src="https://assets.mixkit.co/videos/47586/47586-thumb-360-0.jpg" alt="Lavagem técnica com espuma" loading="lazy"><span class="egal-cap">Lavagem técnica</span></div>
+        <div class="egal-item egal-5"><img src="images/Bmwsuja.png" alt="Veículo antes do detalhamento" loading="lazy"><span class="egal-cap">Antes</span></div>
+        <div class="egal-item egal-6"><img src="https://assets.mixkit.co/videos/47832/47832-thumb-360-2.jpg" alt="Higienização do interior em couro" loading="lazy"><span class="egal-cap">Higienização interna</span></div>
+        <div class="egal-item egal-7"><img src="https://assets.mixkit.co/videos/47468/47468-thumb-360-0.jpg" alt="Detalhe de rodas e pneus" loading="lazy"><span class="egal-cap">Detalhe de rodas</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROTEÇÃO ===================== -->
+  <section class="protection-section">
+    <div class="protection-bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3" alt="">
+    </div>
+    <div class="container protection-content">
+      <div class="protection-copy" data-reveal>
+        <span class="eyebrow">07 — Proteção</span>
+        <h2>Uma camada entre<br>a pintura e o tempo.</h2>
+        <p>A proteção cerâmica cria uma barreira molecular sobre a pintura — resistente, hidrofóbica e duradoura, mantendo o veículo protegido muito depois da lavagem.</p>
+        <ul class="protection-list">
+          <li><span class="pnum">01</span><div><h4>Brilho</h4><p>Profundidade óptica que realça a cor original da pintura.</p></div></li>
+          <li><span class="pnum">02</span><div><h4>Hidrofobicidade</h4><p>Repelência à água que facilita a limpeza e reduz manchas.</p></div></li>
+          <li><span class="pnum">03</span><div><h4>Resistência</h4><p>Camada dura contra riscos leves, UV e agentes químicos.</p></div></li>
+          <li><span class="pnum">04</span><div><h4>Conservação</h4><p>Preserva o valor e o estado da pintura ao longo dos anos.</p></div></li>
+        </ul>
+      </div>
+      <div class="protection-orb" data-reveal aria-hidden="true">
+        <div class="protection-ring r1"></div>
+        <div class="protection-ring r2"></div>
+        <div class="protection-ring r3"></div>
+        <div class="protection-core"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section class="testimonials-section" id="depoimentos">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">08 — Depoimentos</span>
+        <h2>O que dizem<br>nossos clientes.</h2>
+      </div>
+      <div class="testimonial-track" data-reveal>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>Meu carro nunca teve esse nível de acabamento. Atendimento excelente e agendamento super fácil pelo site.</p>
+          <strong>Mariana S.</strong><span class="veh">Jeep Compass</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>Me senti bem atendido do início ao fim. O resultado no polimento superou o que eu esperava.</p>
+          <strong>Carlos E.</strong><span class="veh">VW Golf GTI</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>Profissionalismo e cuidado em cada detalhe do veículo. Virei cliente fixo depois da primeira vitrificação.</p>
+          <strong>Juliana R.</strong><span class="veh">BMW 320i</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="final-cta-section">
+    <div class="final-cta-media" aria-hidden="true">
+      <img src="images/Bmwlimpa.png" alt="">
+    </div>
+    <div class="container final-cta-content" data-reveal>
+      <h2>SEU CARRO<br><em>MERECE MAIS.</em></h2>
+      <p>Agende seu horário e leve o cuidado com o seu veículo para o próximo nível.</p>
+      <a href="pages/agendar.html" class="btn btn-cta" data-cursor="AGENDAR">AGENDAR MEU HORÁRIO</a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="contact-section" id="contato">
+    <div class="container">
+      <div data-reveal>
+        <span class="eyebrow">Contato</span>
+        <h2>Fale Conosco</h2>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-phone"></i> (14) 99889-4962</li>
+          <li><i class="fa-brands fa-whatsapp"></i> Agende pelo WhatsApp</li>
+          <li><i class="fa-solid fa-envelope"></i> rsmottadevgroup@gmail.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> R. Carlos Guimarães, 1234 - Vila Nova, Fartura - SP</li>
+        </ul>
+        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.9229896982856!2d-49.51214242376494!3d-23.39100305535749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c1a5699e8b0e8f%3A0xf29f881d297c6567!2sCasa%20Grande%20-%20Espa%C3%A7os%20Comerciais!5e0!3m2!1spt-BR!2sbr!4v1785765767268!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <form id="contact-form" class="card" data-reveal>
+        <div class="form-group">
+          <label for="contact-nome">Nome</label>
+          <input type="text" id="contact-nome" class="form-control" placeholder="Ex: Maria Silva" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">E-mail</label>
+          <input type="email" id="contact-email" class="form-control" placeholder="Ex: mariasilva@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-msg">Mensagem</label>
+          <textarea id="contact-msg" class="form-control" rows="4" placeholder="Ex: Olá, preciso de atendimento específico!" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Lightbox modal (antes/depois) -->
+  <div class="gd-modal" id="gd-modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="gd-close" id="gd-close" aria-label="Fechar">&times;</button>
+      <div class="gd-toggle">
+        <button id="gd-show-before" class="btn btn-sm">Antes</button>
+        <button id="gd-show-after" class="btn btn-sm">Depois</button>
+      </div>
+      <div class="modal-media" id="gd-media">
+        <img id="gd-before" src="" alt="Antes">
+        <img id="gd-after" src="" alt="Depois">
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">Fartura Detail</a>
+        <p style="margin-top:0.8rem;font-size:0.85rem;color:var(--color-gray-400);">Estética automotiva premium, cuidado técnico e acabamento de vitrine.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/ryansmotta27" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ryansmotta27" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://wa.me/5514998894962?text=Ol%C3%A1%2C%20gostaria%20de%20um%20atendimento%20pelo%20WhatsApp." target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div><h4>Navegação</h4><a href="#sobre">Sobre</a><br><a href="#servicos">Serviços</a><br><a href="#contato">Contato</a></div>
+      <div><h4>Conta</h4><a href="pages/login.html">Entrar</a><br><a href="pages/cadastro.html">Cadastrar</a></div>
+      <div><h4>Contato</h4><a href="tel:+5514998894962">(14) 99889-4962</a><br><a href="mailto:rsmottadevgroup@gmail.com">rsmottadevgroup@gmail.com</a></div>
+    </div>
+    <div class="footer-meta">
+      <span>Fartura Detail © 2026</span>
+      <span>Fartura — SP, Brasil</span>
+      <span>Estética Automotiva Premium</span>
+    </div>
+    <p class="footer-bottom">Todos os direitos reservados.</p>
+  </footer>
+
+  <div id="toast-container"></div>
+
+  <script src="js/utils/toast.js"></script>
+  <script src="js/utils/validators.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config/supabase-config.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/gallery.js"></script>
+  <script src="js/modules/whatsapp.js"></script>
+  <script src="js/redesign.js"></script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.getElementById("contact-form");
+    const modal = document.getElementById("confirmModal");
+    const preview = document.getElementById("preview");
+
+    let mensagemWhatsapp = "";
+
+    form.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        const nome = document.getElementById("contact-nome").value.trim();
+        const email = document.getElementById("contact-email").value.trim();
+        const mensagem = document.getElementById("contact-msg").value.trim();
+
+        mensagemWhatsapp =
+`Olá, gostaria de um atendimento.
+
+ Nome: ${nome}
+
+ E-mail: ${email}
+
+ Mensagem:
+${mensagem}`;
+
+        preview.innerHTML = `
+<b>Nome:</b> ${nome}<br><br>
+<b>E-mail:</b> ${email}<br><br>
+<b>Mensagem:</b><br>${mensagem}
+`;
+
+        modal.classList.add("show");
+
+    });
+
+    document.getElementById("cancelBtn").onclick = () =>{
+        modal.classList.remove("show");
+    }
+
+    document.getElementById("confirmBtn").onclick = () =>{
+
+        window.open(
+            "https://wa.me/5514998894962?text="+encodeURIComponent(mensagemWhatsapp),
+            "_blank"
+        );
+
+        modal.classList.remove("show");
+        form.reset();
+
+    }
+
+});
+
+</script>
+<!--balao flutuante-->
+<div id="confirmModal" class="modal">
+    <div class="modal-content">
+        <h3>Confirmar envio</h3>
+
+        <div id="preview"></div>
+
+        <div class="modal-buttons">
+            <button id="cancelBtn" class="btn btn-outline">Cancelar</button>
+            <button id="confirmBtn" class="btn btn-primary">
+                Enviar pelo WhatsApp
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
